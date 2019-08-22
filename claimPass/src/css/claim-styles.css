@@ -1,0 +1,495 @@
+/* purple #652a65 
+   orange #ee7722
+   gray #e6e6e6
+   #999
+*/
+
+/* Dagny Pro Bold Italic
+
+font-family: ff-dagny-web-pro, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Dagny Pro Italic
+
+font-family: ff-dagny-web-pro, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Dagny Pro Bold
+
+font-family: ff-dagny-web-pro, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Dagny Pro Regular
+
+font-family: ff-dagny-web-pro, sans-serif;
+
+font-weight: 400; 
+
+font-style: normal;
+
+*/
+
+
+
+
+html {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #fff;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  #o2kl img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  #o2kl h1,
+  #o2kl h2,
+  #o2kl h3 {
+    margin: 0;
+  }
+  
+  #o2kl p {
+    margin: 0;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0 0.5em;
+  }
+  
+  #o2kl .btn {
+    display: inline-block;
+    background: #ee7722;
+    color: #fff;
+    font-size:0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.3em 2em;
+    border-radius: 5px;
+    margin:1em 0;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    width:150px;
+  }
+  
+  #o2kl .btn:hover {
+    background: #999;
+    color: #333;
+  }
+  
+  /*Header*/
+  
+  #o2kl #showcase {
+    min-height: 400px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .video-player {
+    width:90%;
+    margin:0 auto;
+  }
+  
+  #showcase .bg-img {
+    position: absolute;
+    background: #333
+      url('../imgs/hero-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 47%;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #o2kl #showcase .holder {
+      display: block;
+      position:relative;
+      width:90%;
+      margin:0 auto;
+      text-align: center;
+  }
+  
+  #o2kl #showcase h1 {
+    font-size:2.5em;
+    line-height:1em;
+    color:#652a65;
+    margin:0.75em 0 0.5em 0;
+    font-family: ff-dagny-web-pro,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  #o2kl #showcase h3 {
+    font-size:0.9em;
+    line-height:1.5em;
+    font-weight: 700;
+    color:#ee7722;
+  }
+
+
+
+  #o2kl .form-holder {
+    color:#333;
+    position: relative;;
+    background:#e5e5e5;
+    height:100%;
+    z-index: 10;
+    padding-bottom:1em;
+  }
+
+  #o2kl .form-holder h4 {
+      text-align: center;
+      position:relative;
+      display: inline-block;
+      color:#ee7722;
+      margin:1em 0 0.5em 0;
+      text-transform: uppercase;
+  }
+
+  #o2kl .form-btn {
+      margin:2em 0 1em 0;
+      border:none;
+      padding:0.3em 1em;
+      width:225px;
+  }
+
+  #o2kl #topForm {
+    position: relative;
+  }
+
+  #o2kl #topForm  div {
+    margin:0.8em 0 0.3em 0;
+  }
+
+  #o2kl input[type=text],   #o2kl input[type=email],   #o2kl input[type=tel]{
+    width: 90%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    /* border-radius: 2px; */
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+
+
+ 
+  #o2kl label {
+      display:block;
+      font-size:0.8em;
+  }
+
+
+  
+  #showcase .content-wrap,
+  #o2kl #section-a .content-wrap {
+    padding: 1em 1.5em;
+  }
+
+  #o2kl .title-bar {
+      margin:0 auto 1em auto;
+      padding:0.8em;
+      text-transform: uppercase;
+      color:#fff;
+      background:#652a65;
+      font-family: ff-dagny-web-pro, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+  }
+  
+  /*Section A*/
+  
+  #o2kl #section-a {
+    background: #fff;
+    color: #999;
+  }
+
+  #o2kl #section-a  h2{
+    font-size:1.1em;
+    text-transform: uppercase;
+    padding:00 0 0;
+    color: #652a65;
+  }
+
+  /* Info Graphic */
+  #o2kl .graphic-display {
+    width:100%;
+    background:#e6e6e6;
+  }
+
+  #o2kl .graphic-display img {
+    padding:1em;
+  }
+
+  #o2kl #section-graphic .title-bar {
+    margin:1em auto 0 auto;
+  }
+
+  #o2kl .card-content .btn {
+    margin-bottom:1.5em;
+  }
+
+
+
+  /*Section B*/
+  
+  #o2kl #section-b {
+    color:#999;
+  }
+  
+
+
+  #o2kl #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #o2kl #section-b li {
+    background:#fefbf0;
+  }
+
+  #o2kl #section-b h3 {
+    font-size:1.1em;
+    text-transform: uppercase;
+    padding:1.5em 0 0.5em 0;
+    color: #652a65;
+  }
+  
+  #o2kl #section-b li {
+    width: 90%;
+    background:#fefbf0;
+    margin:0 auto;
+  }
+  #o2kl .card-content {
+    padding:0;
+ 
+    margin:1em 1em 0.5em 1em;
+  }
+
+  /* Section C */
+
+  #o2kl #section-c {
+    color:#999;
+    margin:0 0 1em 0;
+  }
+
+  #o2kl #section-c h3 {
+    font-size:1.1em;
+    text-transform: uppercase;
+    padding:1.5em 0 0.5em 0;
+    color: #652a65;
+  }
+  
+  /*Footer*/
+  
+  #o2kl #main-footer {
+    padding: 2em;
+    background: #652a65;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  #o2kl #main-footer a {
+    color: #fff;
+    width:150px;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    #o2kl .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(4, minmax(1fr, 25em)) 1fr;
+    }
+
+    #o2kl .grid-graphic {
+      display: grid;
+      grid-template-columns: 1fr repeat(5, minmax(1fr, 25em)) 1fr;
+    }
+  
+    #o2kl .showcase-grid {
+      display: grid;
+      grid-template-columns: 50px repeat(5, minmax(auto, 25em))  200px 50px 50px;
+    }
+
+  
+    #o2kl #showcase {
+      height:450px;
+    }
+    #o2kl  #showcase .bg-img {
+      opacity: 1;
+      height:450px;
+    }
+
+    #o2kl #showcase .holder {
+      text-align: left;
+      grid-column: 2 / span 2;
+    }
+
+    #o2kl #showcase h1 {
+      font-size: 3em;
+    }
+
+    #o2kl #showcase .form-holder {
+      width:100%;
+      grid-column: 7/9;
+      top:0;
+    }
+
+    #o2kl input[type=text], #o2kl input[type=email], #o2kl input[type=tel]{
+      width: 80%;
+      padding: 4px;
+      border: 1px solid #ccc;
+      /* border-radius: 2px; */
+      margin:0;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+   
+    #o2kl label {
+        display:block;
+        font-size:0.8em;
+    }
+
+    #o2kl #topForm {
+      position: relative;
+    }
+  
+    #o2kl .form-holder h4 {
+      margin:0.25em;
+    }
+  
+    #o2kl #topForm  div {
+      margin:0.4em 0 0.3em 0;
+    }
+
+    #o2kl #section-a .content-1 {
+      grid-column: 1/span 2;
+    }
+
+    #o2kl #section-a .content-wrap {
+      justify-self: center;
+      max-width:550px;
+    }
+
+    #o2kl #section-a .content-2 {
+      grid-column: 4 /span 2;
+    }
+
+    #o2kl #section-a .content-text {
+      column-gap: 2em;
+  
+    }
+  
+    #o2kl #section-a .content-text p {
+      padding-top: 0;
+
+    }
+  
+    /* .content-wrap,
+    #section-b ul {
+      grid-column: 2/5;
+    } */
+
+  
+    #o2kl #section-b ul {
+      display: flex;
+      margin:1em;
+      justify-content:/* */ space-around;
+    }
+    #o2kl #section-b li {
+      width: 43%;
+      background:#fefbf0;
+    }
+  
+    #o2kl .box,
+    #o2kl #main-footer div {
+      grid-column: span 2;
+    }
+
+
+    #o2kl #section-graphic .title-bar {
+    width:90%;
+    margin:1em auto 0 auto;
+  }
+
+  #o2kl #section-graphic .graphic-display {
+    width:90%;
+    margin:0 auto;
+  }
+
+  #o2kl .form-holder {
+    width:300px;
+    position:absolute;
+    top:0;
+    right:30px;
+    height:450px;
+  }
+
+    /*Footer*/
+  
+    #o2kl #main-footer {
+      padding: 2em;
+      background: #652a65;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: left;
+
+
+    }
+    
+
+   #o2kl #main-footer #footer-left {
+     justify-self: start;
+     align-self: center;
+    grid-row: 1;
+    }
+
+   #o2kl #main-footer #footer-right {
+    justify-self: end;
+    align-self: center;
+    grid-row: 1;
+    }
+
+
+    #o2kl #main-footer a {
+      color: #fff;
+      width:150px;
+    }
+    
+}
+  
