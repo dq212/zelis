@@ -59,10 +59,10 @@ body {
     font-weight: 300;
     font-style: normal;
     background-color: #fff;
-    color: #fff;
-    font-size: 1.1em;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
+
   }
   
   #o2kl img {
@@ -75,6 +75,7 @@ body {
   #o2kl h2,
   #o2kl h3 {
     margin: 0;
+    color:#fff;
   }
   
   #o2kl p {
@@ -115,15 +116,15 @@ body {
     text-align: center;
   }
 
-  .video-player {
+  #o2kl .video-player {
     width:90%;
     margin:0 auto;
   }
   
-  #showcase .bg-img {
+  #o2kl #showcase .bg-img {
     position: absolute;
     background: #333
-      url('../imgs/hero-bg.jpg');
+      url('./imgs/hero-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,14 +334,21 @@ body {
   @media (min-width: 700px) {
     #o2kl .grid {
       display: grid;
-      grid-template-columns: 1fr repeat(4, minmax(1fr, 25em)) 1fr;
+      grid-template-columns: 1fr repeat(4, minmax(auto, 25em)) 1fr;
     }
 
     #o2kl .grid-graphic {
       display: grid;
-      grid-template-columns: 1fr repeat(5, minmax(1fr, 25em)) 1fr;
+      /* grid-template-columns: 1fr repeat(5, minmax(1fr, 25em)) 1fr; */
+      grid-template-columns: 10% 80% 10%;
     }
   
+    #o2kl .grid-graphic2 {
+      display: grid;
+      /* grid-template-columns: 1fr repeat(5, minmax(1fr, 25em)) 1fr; */
+      grid-template-columns: 10% 40% 40% 10%;
+    }
+
     #o2kl .showcase-grid {
       display: grid;
       grid-template-columns: 50px repeat(5, minmax(auto, 25em))  200px 50px 50px;
@@ -367,6 +375,7 @@ body {
     #o2kl #showcase .form-holder {
       width:100%;
       grid-column: 7/9;
+
       top:0;
     }
 
@@ -383,6 +392,7 @@ body {
     #o2kl label {
         display:block;
         font-size:0.8em;
+        text-align: left;
     }
 
     #o2kl #topForm {
@@ -397,8 +407,14 @@ body {
       margin:0.4em 0 0.3em 0;
     }
 
+    #o2kl #section-a h2 {
+      padding:0 0 0.5em 0.5em;
+    }
+
+
     #o2kl #section-a .content-1 {
-      grid-column: 1/span 2;
+      grid-column: 2/4;
+      text-align: left;
     }
 
     #o2kl #section-a .content-wrap {
@@ -407,7 +423,8 @@ body {
     }
 
     #o2kl #section-a .content-2 {
-      grid-column: 4 /span 2;
+      grid-column: 4 /6;
+      text-align: left;
     }
 
     #o2kl #section-a .content-text {
@@ -428,13 +445,32 @@ body {
   
     #o2kl #section-b ul {
       display: flex;
-      margin:1em;
-      justify-content:/* */ space-around;
+      grid-column: 2 / 4;
+     
+      /* justify-content space-around; */
     }
     #o2kl #section-b li {
-      width: 43%;
       background:#fefbf0;
+      padding:10px;
+     
+ 
     }
+
+    #o2kl #section-b #card1 {
+      display:block;
+      margin:1em 0.5em 1em 0;
+    }
+
+    #o2kl #section-b #card2{
+      display:block;
+      margin:1em 0 1em 0.5em;
+    }
+
+
+
+    
+
+
   
     #o2kl .box,
     #o2kl #main-footer div {
@@ -443,12 +479,16 @@ body {
 
 
     #o2kl #section-graphic .title-bar {
-    width:90%;
+    width:100%;
+    grid-row:1;
+    grid-column: 2;
     margin:1em auto 0 auto;
   }
 
   #o2kl #section-graphic .graphic-display {
-    width:90%;
+    width:100%;
+    grid-row:2;
+    grid-column: 2;
     margin:0 auto;
   }
 
@@ -467,7 +507,7 @@ body {
       background: #652a65;
       color: #fff;
       text-transform: uppercase;
-      text-align: left;
+      text-align: center;
 
 
     }
@@ -476,13 +516,14 @@ body {
    #o2kl #main-footer #footer-left {
      justify-self: start;
      align-self: center;
-    grid-row: 1;
+     grid-row: 1;
     }
 
    #o2kl #main-footer #footer-right {
     justify-self: end;
     align-self: center;
     grid-row: 1;
+    grid-column: 5;
     }
 
 
