@@ -89,6 +89,8 @@ if ( ! function_exists( 'zelis_setup' ) ) :
             'level_3_nav' => __( 'level 3 nav', 'zelis' ),
             'payment_integrity_nav' => __( 'Payment Integrity Nav', 'zelis' ),
             'provider_solutions_nav' => __( 'Provider Solutions Nav', 'zelis' ),
+            'zna_consultants_nav' => __( 'Consultants Nav', 'zelis' ),
+            'zna_payers_nav' => __( 'Payers Nav', 'zelis' ),
 
 		) );
 
@@ -323,9 +325,11 @@ function zelis_scripts() {
 	wp_enqueue_script( 'aos-js', get_stylesheet_directory_uri() . '/assets/javascripts/aos.js' , true);
 	wp_enqueue_script( 'validate', get_stylesheet_directory_uri() . '/assets/javascripts/validate/jquery.validate.min.js', array( 'jquery' ), true  );
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/assets/javascripts/main.js', array( 'zelis-bootstrap-js', 'validate', 'jquery', 'aos-js' ), true );
-
 }
 add_action( 'wp_enqueue_scripts', 'zelis_scripts' );
+
+
+
 
 
 /*
