@@ -15,7 +15,7 @@ font-style: italic;
 
 Dagny Pro Italic
 
-font-family: ff-dagny-web-pro, sans-serif;
+font-family: ff-dagny-web-pro, sans-serif;f
 
 font-weight: 400;
 
@@ -197,6 +197,7 @@ font-style: normal;
   position: relative;;
   background:#e5e5e5;
   z-index: 10;
+  right:0;
   padding-bottom:1em;
   text-align: center;
 }
@@ -240,6 +241,11 @@ font-style: normal;
   text-align: center;
 }
 
+#o2kl-cp .required-mark {
+ color:red;
+}
+
+
 #o2kl-cp label {
     display:block;
     font-size:0.8em;
@@ -264,6 +270,7 @@ font-style: normal;
     font-style: normal;
     text-align:center;
 }
+
 
 /*Section A*/
 
@@ -368,9 +375,16 @@ font-style: normal;
   width:150px;
 }
 
+
+
+
+
+
+
+
 /* Media Queries */
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   #o2kl-cp .grid {
     display: -ms-grid;
     display: grid;
@@ -413,14 +427,13 @@ font-style: normal;
 
   #o2kl-cp #showcase .holder {
     text-align: left;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 2;
-    grid-column: 2/ span 2;
+    grid-column: 1/ span 2;
   }
 
-  #o2kl-cp #showcase h1 {
-    font-size: 3em;
-  }
+
+
 
   #o2kl-cp #showcase .form-holder {
     width:100%;
@@ -561,7 +574,7 @@ font-style: normal;
   width:300px;
   position:absolute;
   top:80px;
-  right:80px;
+  right:0px;
   height:450px;
 }
 
@@ -573,11 +586,8 @@ font-style: normal;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-
-
   }
   
-
  #o2kl-cp #main-footer #footer-left {
    -ms-grid-column-align: start;
        justify-self: start;
@@ -599,7 +609,6 @@ font-style: normal;
   grid-column: 5;
   }
 
-
   #o2kl-cp #main-footer a {
     color: #fff;
     width:150px;
@@ -607,3 +616,45 @@ font-style: normal;
   
 }
 
+
+/* Media Queries */
+@media (min-width: 1024px) {
+
+  #o2kl-cp .showcase-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px (minmax(auto, 25em))[5]  150px 50px 50px;
+    grid-template-columns: 50px repeat(5, minmax(auto, 25em))  200px 50px 50px;
+  }
+
+  #o2kl-cp #showcase .holder {
+    text-align: left;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+    padding-right:1em;
+  }
+
+  #o2kl-cp .form-holder {
+  width:300px;
+  position:absolute;
+  top:80px;
+  right:80px;
+  height:450px;
+}
+
+
+  #o2kl-cp #showcase h1 {
+    font-size: 2.8em;
+    margin:0.75em 0 0 0;
+    font-family: ff-dagny-web-pro,sans-serif;
+    font-weight: 900 !important;
+    font-style: normal;
+  }
+
+
+  #o2kl-cp #showcase h3 {
+    font-size:0.8em;
+  }
+
+}
