@@ -192,6 +192,7 @@ font-style: normal;
   color:#ee7722;
 }
 
+
 #o2kl-cp .form-holder {
   color:#333;
   position: relative;;
@@ -245,6 +246,9 @@ font-style: normal;
  color:red;
 }
 
+form.form {
+  padding:1.5em;
+}
 
 #o2kl-cp label {
     display:block;
@@ -575,7 +579,7 @@ font-style: normal;
   position:absolute;
   top:80px;
   right:0px;
-  height:450px;
+  height:468px;
 }
 
   /*Footer*/
@@ -617,6 +621,7 @@ font-style: normal;
 }
 
 
+
 /* Media Queries */
 @media (min-width: 1024px) {
 
@@ -640,7 +645,7 @@ font-style: normal;
   position:absolute;
   top:80px;
   right:80px;
-  height:450px;
+  height:468px;
 }
 
 
@@ -652,9 +657,18 @@ font-style: normal;
     font-style: normal;
   }
 
-
   #o2kl-cp #showcase h3 {
     font-size:0.8em;
   }
 
+  #o2kl-cp form.form input.text{
+    width:95% !important;
+  }
+
+  #o2kl-cp #pardot-form .submit input {
+    outline: none !important;
+    margin:10px 28px !important;
+  }
+
 }
+
