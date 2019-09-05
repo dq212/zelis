@@ -83,6 +83,8 @@ $height: 250px;
 
 #hero {
   @extend .abs-pos;
+  top:30px;
+  left:0;
 }
 
 // #cta_elm {

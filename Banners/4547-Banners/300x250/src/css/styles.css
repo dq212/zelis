@@ -72,6 +72,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #000000; }
 
+#hero {
+  top: 30px;
+  left: 0; }
+
 #cta-copy-1 {
   position: relative;
   width: 67px;
