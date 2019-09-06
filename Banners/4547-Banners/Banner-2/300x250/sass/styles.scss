@@ -1,0 +1,143 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transform";
+@import "compass/utilities/sprites";
+
+// set up variables
+$width: 300px;
+$height: 250px;
+
+// Uncomment to include sprites in your banner
+// $sprites: sprite-map("sprites/*.png");
+
+// to use sprites, place the image in the sprites folder and set the background for the desired element as follows:
+// .element { background: sprite($sprites, image-name); }
+
+// set all elements to be box-sizing: border box to include any border, padding and content, but not margin.
+*, :before, :after {
+  @include box-sizing(border-box);
+}
+
+// 100% width and height elements that can be positioned easily absolutely
+.abs-pos {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: $width;
+  height: $height; 
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#wrapper {
+  @extend .abs-pos;
+  position: relative; 
+  visibility: hidden; 
+
+  cursor: pointer;
+
+  &.show {
+    visibility: visible;
+  }
+}
+
+#click_through {
+  @extend .abs-pos;
+  z-index: 999;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid #000000;
+  
+}
+
+#logo {
+@extend .abs-pos;
+}
+
+#copy-1 {
+  @extend .abs-pos;
+    // position: absolute;
+    // opacity: 0;
+
+    // left: 50%;
+    // top: 55%;
+    // width: 100%;
+
+    // p {
+    //   @include transform(
+    //     translate( -50%, -50% )
+    //   );
+    //   text-align: center;
+    //   width: 100%;
+    // }
+}
+#copy-1b {
+  @extend .abs-pos;
+}
+
+
+#copy-2 {
+  @extend .abs-pos;
+}
+
+#cta {
+  @extend .abs-pos;
+  
+}
+
+#hero {
+  @extend .abs-pos;
+  top:0px;
+  left:0;
+}
+
+// #cta_elm {
+//   background-color: #0175da;
+//   opacity: 0;
+// }
+
+// #cta_elm > div {
+//   background-color: #0175da;
+//   color: #fff;
+//   display: table;
+// }
+
+// #cta_elm > div:after {
+//   content: "LEARN MORE";
+//   display: table-cell;
+//   text-align: center;
+//   vertical-align: middle;
+// }
+
+
+
+// SIGN CLASSES
+
+
+
+#cta-copy-1 {
+  position: relative;
+  width:99px;
+  height: 9px;
+  left:17px;
+  top:7px;
+}
+
+#cta-copy-2 {
+  position: relative;
+  width:99px;
+  height:9px;
+  left:17px;
+  top:31px;
+}
+
+#cta {
+  position: absolute;
+  background:#ec7623;
+  top:207px;
+  left:147px;
+  width:134px;
+  height:29px;
+  overflow: hidden;
+} 
+

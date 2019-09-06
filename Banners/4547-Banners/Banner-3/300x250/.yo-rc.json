@@ -1,0 +1,12 @@
+{
+  "generator-craft-banner": {
+    "nameSpace": "Zelis",
+    "publisher": "atlas",
+    "bannerName": "Zelis-1",
+    "width": "300",
+    "height": "250",
+    "size": "150",
+    "includeFallbackIE": true,
+    "fallbackIEVersion": 10
+  }
+}
